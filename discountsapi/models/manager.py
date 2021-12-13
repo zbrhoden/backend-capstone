@@ -3,6 +3,5 @@ from django.contrib.auth.models import User
 
 
 class Manager(models.Model):
-
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    bio = models.CharField(max_length=50)
+    store = models.ForeignKey("store", on_delete=models.CASCADE)

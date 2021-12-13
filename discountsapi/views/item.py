@@ -8,3 +8,5 @@ from rest_framework import serializers
 from rest_framework import status
 from discountsapi.models import Item
 
+class ItemView(ViewSet):
+    
