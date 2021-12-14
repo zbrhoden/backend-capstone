@@ -1,0 +1,9 @@
+[
+    {
+        "model": "discountsapi.store",
+        "pk": 1,
+        "fields": {
+            "name": "Apples for Dollars"
+        }
+    }
+]

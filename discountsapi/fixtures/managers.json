@@ -1,0 +1,10 @@
+[
+    {
+        "model": "discountsapi.manager",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "store": 1
+        }
+    }
+]
