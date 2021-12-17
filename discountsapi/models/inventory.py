@@ -1,5 +1,4 @@
 from django.db import models
-from discountsapi.models.store import Store
 
 class Inventory(models.Model):
     name = models.CharField(max_length=55)
