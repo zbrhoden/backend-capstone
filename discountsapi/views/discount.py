@@ -3,21 +3,22 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from discountsapi.models import Discount, Manager, Category
+from discountsapi.models import Discount, Category
 
 class DiscountView(ViewSet):
     def create(self, request):
  
 
-        category = Category.objects.get(pk=request.data["CategoriesId"])
+        category = Category.objects.get(pk=request.data["CategoryId"])
 
         try:
 
             discount = Discount.objects.create(
-                item=request.data["item"],
+                inventory=request.data["inventory"],
                 store=request.data["store"],
-                start_date=request.data["start_date"],
-                end_date=request.data["end_date"],
+                day_of_week=request.data["day_of_week"],
+                quantity=request.data["quantity"],
+                discount_percentage=request.data["discount_percentage"],
                 category=category
             )
             serializer = DiscountSerializer(discount, context={'request': request})
@@ -28,19 +29,17 @@ class DiscountView(ViewSet):
 
     def update(self, request, pk=None):
 
-        manager = Manager.objects.get(user=request.auth.user)
-
-        # Do mostly the same thing as POST, but instead of
-        # creating a new instance of Game, get the game record
-        # from the database whose primary key is `pk`
         discount = Discount.objects.get(pk=pk)
         
-
+        discount.inventory = request.data["inventory"]
+        discount.store = request.data["store"]
+        discount.category = request.data["category"]
+        discount.day_of_week = request.data["day_of_week"]
+        discount.quantity = request.data["quantity"]
+        discount.discount_percentage = request.data["discount_percentage"]
 
         discount.save()
 
-        # 204 status code means everything worked but the
-        # server is not sending back any data in the response
         return Response({}, status=status.HTTP_204_NO_CONTENT)
 
 
@@ -68,5 +67,5 @@ class DiscountSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Discount
-        fields = ('id', 'item', 'store', 'category', 'start_date', 'end_date')
+        fields = ('id', 'inventory', 'store', 'category', 'day_of_week', 'quantity', 'discount_percentage')
         depth = 1

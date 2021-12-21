@@ -1,0 +1,9 @@
+[
+    {
+    "model": "discountsapi.category",
+    "pk": 1,
+    "fields": {
+        "label": "Fruit"
+        }   
+    } 
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "model": "discountsapi.discount",
+        "pk": 1,
+        "fields": {
+            "inventory_id": 1,
+            "store_id": 1,
+            "category_id": 1,
+            "day_of_week": 1,
+            "quantity": 3,
+            "discount_percentage": 0.5
+        }
+    },
+    {
+        "model": "discountsapi.discount",
+        "pk": 2,
+        "fields": {
+            "inventory_id": 1,
+            "store_id": 1,
+            "category_id": 1,
+            "day_of_week": 2,
+            "quantity": 4,
+            "discount_percentage": 0.25
+        }   
+    } 
+    
+]

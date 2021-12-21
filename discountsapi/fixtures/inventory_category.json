@@ -1,0 +1,11 @@
+
+[
+    {
+    "model": "discountsapi.inventory_category",
+    "pk": 1,
+    "fields": {
+        "inventory_id": 1,
+        "category_id": 1
+        }   
+    } 
+]
