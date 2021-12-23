@@ -3,19 +3,22 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from rest_framework import status
-from discountsapi.models import Discount, Category
+from discountsapi.models import Discount, Category, Inventory, Store
+import logging
 
 class DiscountView(ViewSet):
     def create(self, request):
- 
 
-        category = Category.objects.get(pk=request.data["CategoryId"])
-
+        category = Category.objects.get(pk=request.data["category"])
+        inventory = Inventory.objects.get(pk=request.data["inventory"])
+        store = Store.objects.get(pk=request.data["store"])
+        logging.warning('My Request')
+        logging.warning(request.data)
         try:
 
             discount = Discount.objects.create(
-                inventory=request.data["inventory"],
-                store=request.data["store"],
+                inventory=inventory,
+                store=store, 
                 day_of_week=request.data["day_of_week"],
                 quantity=request.data["quantity"],
                 discount_percentage=request.data["discount_percentage"],
@@ -25,6 +28,7 @@ class DiscountView(ViewSet):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         
         except Exception as ex:
+            logging.warning(ex)
             return HttpResponseServerError(ex)
 
     def update(self, request, pk=None):
