@@ -28,6 +28,28 @@ class DiscountView(ViewSet):
         except Exception as ex:
             return HttpResponseServerError(ex)
 
+
+    def retrieve(self, request, pk=None):
+        """Handle GET requests for single event
+
+        Returns:
+            Response -- JSON serialized event instance
+        """
+        try:
+            # `pk` is a parameter to this function, and
+            # Django parses it from the URL route parameter
+            #   http://localhost:8000/events/2
+            #
+            # The `2` at the end of the route becomes `pk`
+            discount = Discount.objects.get(pk=pk)
+            
+            
+            # event = Event.objects.get(pk=pk)
+            serializer = DiscountSerializer(discount, context={'request': request})
+            return Response(serializer.data)
+        except Exception as ex:
+            return Response({'message', 'Discount Not Found'}, status=status.HTTP_404_NOT_FOUND)
+
     def update(self, request, pk=None):
 
         discount = Discount.objects.get(pk=pk)

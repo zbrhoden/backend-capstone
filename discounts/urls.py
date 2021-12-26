@@ -16,4 +16,5 @@ urlpatterns = [
     path('login', login_user),
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
+    # path(r'^api/tutorials/(?P<pk>[0-9]+)$', views.tutorial_detail),
 ]
