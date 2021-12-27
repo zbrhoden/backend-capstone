@@ -52,11 +52,15 @@ class DiscountView(ViewSet):
 
     def update(self, request, pk=None):
 
+        category = Category.objects.get(pk=request.data["category"])
+        inventory = Inventory.objects.get(pk=request.data["inventory"])
+        store = Store.objects.get(pk=request.data["store"])
+
         discount = Discount.objects.get(pk=pk)
         
-        discount.inventory = request.data["inventory"]
-        discount.store = request.data["store"]
-        discount.category = request.data["category"]
+        discount.inventory = inventory
+        discount.store = store
+        discount.category = category
         discount.day_of_week = request.data["day_of_week"]
         discount.quantity = request.data["quantity"]
         discount.discount_percentage = request.data["discount_percentage"]
