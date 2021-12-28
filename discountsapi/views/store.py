@@ -40,6 +40,16 @@ class StoreView(ViewSet):
         except Exception as ex:
             return Response({'message', 'Storet Not Found'}, status=status.HTTP_404_NOT_FOUND)
 
+    def update(self, request, pk=None):
+
+        store = Store.objects.get(pk=pk)
+        
+        store.name = request.data["name"]
+
+        store.save()
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
+
     def destroy(self, request, pk=None):
 
         try:
