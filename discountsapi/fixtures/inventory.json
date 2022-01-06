@@ -7,5 +7,23 @@
         "price": 1.00,
         "store_id": 1
         }   
-    } 
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 2,
+    "fields": {
+        "name": "Banana",
+        "price": 2.00,
+        "store_id": 1
+        }
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 3,
+    "fields": {
+        "name": "Orange",
+        "price": 3.00,
+        "store_id": 1
+        }   
+    }    
 ]
