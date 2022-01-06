@@ -5,8 +5,7 @@
     "fields": {
         "name": "Apple",
         "price": 1.00,
-        "store_id": 1,
-        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1632843809/Frontend%20Capstone/apple-fruit-png-20022_aivznk.png"
+        "store_id": 1
         }   
     } 
 ]
