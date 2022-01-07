@@ -4,4 +4,3 @@ from .inventory_category import Inventory_Category
 from .inventory import Inventory
 from .manager import Manager
 from .store import Store
-from .customers import Customer
