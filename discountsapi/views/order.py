@@ -4,18 +4,21 @@ from rest_framework.response import Response
 from rest_framework import serializers
 from discountsapi.models import Order
 from rest_framework import status
+import logging
+
 
 class OrderView(ViewSet):
 
     def create(self, request):
         try:
-
+            logging.info('I told you so')
             order = Order.objects.create(
                 order_date= request.data["order_date"],
-                total_price= request.data["total_price"],
-                total_quantity= request.data["total_quantity"],
+                # total_price= request.data["total_price"],
+                # total_quantity= request.data["total_quantity"],
                 items= request.data["items"]
             )
+            
             serializer = OrderSerializer(order, context={'request': request})
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         
