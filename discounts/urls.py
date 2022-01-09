@@ -3,13 +3,14 @@ from django.conf.urls import include
 from django.urls import path
 from discountsapi.views import register_user, login_user
 from rest_framework import routers
-from discountsapi.views import DiscountView, InventoryView, CategoryView, StoreView
+from discountsapi.views import DiscountView, InventoryView, CategoryView, StoreView, OrderView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'discount', DiscountView, 'discount')
 router.register(r'inventory', InventoryView, 'inventory')
 router.register(r'category', CategoryView, 'category')
 router.register(r'store', StoreView, 'store')
+router.register(r'order', OrderView, 'order')
 
 urlpatterns = [
     path('', include(router.urls)),
