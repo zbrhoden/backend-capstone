@@ -11,7 +11,7 @@ class OrderView(ViewSet):
         try:
 
             order = Order.objects.create(
-                order_date= request.data["day_of_week"],
+                order_date= request.data["order_date"],
                 total_price= request.data["total_price"],
                 total_quantity= request.data["total_quantity"],
                 items= request.data["items"]
