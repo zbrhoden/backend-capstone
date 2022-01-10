@@ -5,5 +5,26 @@
     "fields": {
         "label": "Fruit"
         }   
+    },
+        {
+    "model": "discountsapi.category",
+    "pk": 2,
+    "fields": {
+        "label": "Candy"
+        }   
+    },
+        {
+    "model": "discountsapi.category",
+    "pk": 3,
+    "fields": {
+        "label": "Baked Goods"
+        }   
+    },
+            {
+    "model": "discountsapi.category",
+    "pk": 4,
+    "fields": {
+        "label": "Vegetable"
+        }   
     } 
 ]

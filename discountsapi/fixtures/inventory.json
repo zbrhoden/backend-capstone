@@ -28,5 +28,95 @@
         "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1632843834/Frontend%20Capstone/purepng.com-orange-orangeorangefruitbitter-orangeorangesclip-art-17015273374288pjtg_pvf5km.png",
         "store_id": 1
         }   
-    }    
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 4,
+    "fields": {
+        "name": "Molly's Donut Box",
+        "price": 10.00,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1632843845/Frontend%20Capstone/109-1095549_box-of-donuts-png-transparent-png_wlqyum.png",
+        "store_id": 1
+        }   
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 5,
+    "fields": {
+        "name": "Strawberry",
+        "price": 0.90,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1633283250/Frontend%20Capstone/download_e7coau.jpg",
+        "store_id": 1
+        }   
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 6,
+    "fields": {
+        "name": "Lettuce",
+        "price": 1.80,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1633284144/Frontend%20Capstone/istockphoto-182889875-612x612_yltyj5.jpg",
+        "store_id": 1
+        }   
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 7,
+    "fields": {
+        "name": "Watermelon",
+        "price": 7.00,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1633280947/Frontend%20Capstone/unnamed_b9tk00.png",
+        "store_id": 1
+        }   
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 8,
+    "fields": {
+        "name": "Sliced Bread",
+        "price": 2.50,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1633287221/Frontend%20Capstone/images_nrlj6k.jpg",
+        "store_id": 1
+        }   
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 9,
+    "fields": {
+        "name": "Gushers",
+        "price": 1.20,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1633287745/Frontend%20Capstone/IZQPY_sqq4hy.webp",
+        "store_id": 1
+        }   
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 10,
+    "fields": {
+        "name": "Pineapple",
+        "price": 3.99,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1633289284/Frontend%20Capstone/0002400005988_1_A1C1_0600_rrlska.png",
+        "store_id": 1
+        }   
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 11,
+    "fields": {
+        "name": "Hershey's Bar",
+        "price": 1.75,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1633394247/Frontend%20Capstone/0003400000240_1_A1C1_0600_suxlhg.png",
+        "store_id": 1
+        }   
+    },
+    {
+    "model": "discountsapi.inventory",
+    "pk": 12,
+    "fields": {
+        "name": "Reese's PeanutButter Cups",
+        "price": 2.25,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1633394382/Frontend%20Capstone/0_34000_00440_9_701_44000_136_Item_Front_pilnrf.png",
+        "store_id": 1
+        }   
+    }
 ]

@@ -8,7 +8,7 @@
         "category_id": 1
         }   
     },
-    {
+        {
     "model": "discountsapi.inventory_category",
     "pk": 2,
     "fields": {
@@ -16,12 +16,84 @@
         "category_id": 1
         }   
     },
-    {
+        {
     "model": "discountsapi.inventory_category",
     "pk": 3,
     "fields": {
         "inventory_id": 3,
         "category_id": 1
+        }   
+    },
+        {
+    "model": "discountsapi.inventory_category",
+    "pk": 4,
+    "fields": {
+        "inventory_id": 4,
+        "category_id": 3
+        }   
+    },
+        {
+    "model": "discountsapi.inventory_category",
+    "pk": 5,
+    "fields": {
+        "inventory_id": 5,
+        "category_id": 1
+        }   
+    },  
+        {
+    "model": "discountsapi.inventory_category",
+    "pk": 6,
+    "fields": {
+        "inventory_id": 6,
+        "category_id": 4
+        }   
+    },  
+        {
+    "model": "discountsapi.inventory_category",
+    "pk": 7,
+    "fields": {
+        "inventory_id": 7,
+        "category_id": 1
+        }   
+    },  
+        {
+    "model": "discountsapi.inventory_category",
+    "pk": 8,
+    "fields": {
+        "inventory_id": 8,
+        "category_id": 3
+        }   
+    },  
+        {
+    "model": "discountsapi.inventory_category",
+    "pk": 9,
+    "fields": {
+        "inventory_id": 9,
+        "category_id": 2
+        }   
+    },  
+        {
+    "model": "discountsapi.inventory_category",
+    "pk": 10,
+    "fields": {
+        "inventory_id": 10,
+        "category_id": 1
+        }   
+    },  
+        {
+    "model": "discountsapi.inventory_category",
+    "pk": 11,
+    "fields": {
+        "inventory_id": 11,
+        "category_id": 2
+        }   
+    },  
+        {
+    "model": "discountsapi.inventory_category",
+    "pk": 12,
+    "fields": {
+        "inventory_id": 12,
+        "category_id": 2
         }   
     }  
 ]
