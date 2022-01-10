@@ -8,6 +8,12 @@ from rest_framework.response import Response
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def login_user(request):
+    '''Handles the authentication of a user
+
+    Method arguments:
+
+      request -- The full HTTP request object
+    '''
     username = request.data['username']
     password = request.data['password']
 
@@ -29,6 +35,11 @@ def login_user(request):
 @api_view(['POST'])
 @permission_classes([AllowAny])
 def register_user(request):
+    '''Handles the creation of a new gamer for authentication
+    
+    Method arguments:
+      request -- The full HTTP request object
+    '''
 
     new_user = User.objects.create_user(
         username=request.data['username'],
