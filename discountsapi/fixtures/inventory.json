@@ -5,6 +5,7 @@
     "fields": {
         "name": "Apple",
         "price": 1.00,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1632843809/Frontend%20Capstone/apple-fruit-png-20022_aivznk.png",
         "store_id": 1
         }   
     },
@@ -14,6 +15,7 @@
     "fields": {
         "name": "Banana",
         "price": 2.00,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1633041318/Frontend%20Capstone/Banana_dl10ix.png",
         "store_id": 1
         }
     },
@@ -23,6 +25,7 @@
     "fields": {
         "name": "Orange",
         "price": 3.00,
+        "image": "https://res.cloudinary.com/drtf9afv0/image/upload/v1632843834/Frontend%20Capstone/purepng.com-orange-orangeorangefruitbitter-orangeorangesclip-art-17015273374288pjtg_pvf5km.png",
         "store_id": 1
         }   
     }    
