@@ -3,7 +3,7 @@
         "model": "discountsapi.store",
         "pk": 1,
         "fields": {
-            "name": "Blake's Groceries"
+            "name": "Apples for Dollars"
         }
     }
 ]
