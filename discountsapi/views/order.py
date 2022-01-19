@@ -4,16 +4,16 @@ from rest_framework.response import Response
 from rest_framework import serializers
 from discountsapi.models import Order
 from rest_framework import status
-import logging
 
 
 class OrderView(ViewSet):
 
     def create(self, request):
         try:
-            logging.info('I told you so')
             order = Order.objects.create(
                 order_date= request.data["order_date"],
+                total_quantity = request.data["total_quantity"],
+                total_price = request.data["total_price"],
                 items= request.data["items"]
             )
             
@@ -44,4 +44,4 @@ class OrderSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Order
-        fields = ('id', 'order_date', 'items')
+        fields = ('id', 'total_quantity', 'total_price', 'order_date', 'items')
