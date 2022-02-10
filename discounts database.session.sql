@@ -1,0 +1,1 @@
+DROP TABLE discountsapi_manager
