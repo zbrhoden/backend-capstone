@@ -1,0 +1,11 @@
+[
+    {
+        "model": "discountsapi.order",
+        "pk": 1,
+        "fields": {
+            "order_date": "2022-02-11T00:55:21.368Z",
+            "total_quantity": 1,
+            "total_price": 2.00
+        }
+    }
+]

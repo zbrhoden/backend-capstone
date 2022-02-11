@@ -13,8 +13,7 @@ class OrderView(ViewSet):
             order = Order.objects.create(
                 order_date= request.data["order_date"],
                 total_quantity = request.data["total_quantity"],
-                total_price = request.data["total_price"],
-                items= request.data["items"]
+                total_price = request.data["total_price"]
             )
             
             serializer = OrderSerializer(order, context={'request': request})
@@ -44,4 +43,4 @@ class OrderSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Order
-        fields = ('id', 'total_quantity', 'total_price', 'order_date', 'items')
+        fields = ('id', 'total_quantity', 'total_price', 'order_date')
