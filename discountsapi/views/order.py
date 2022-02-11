@@ -11,9 +11,9 @@ class OrderView(ViewSet):
     def create(self, request):
         try:
             order = Order.objects.create(
-                order_date= request.data["order_date"],
-                total_quantity = request.data["total_quantity"],
-                total_price = request.data["total_price"]
+                order_date= request.data['order_date'],
+                total_quantity = request.data['total_quantity'],
+                total_price = request.data['total_price']
             )
             
             serializer = OrderSerializer(order, context={'request': request})
